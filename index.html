@@ -1,3 +1,4 @@
+<!-- We're making a GitHub repository search client. It should take a user's search terms, query the GitHub search API for repositories, and display the results in the left-hand column. The user can then click various links in each repository to get more detailed information in the right-hand column. -->
 <!DOCTYPE html>
 <html>
   <head>
@@ -25,6 +26,8 @@
     <div class="flexbox-container">
       <div>
         <h3>Repositories</h3>
+         <input type="text" name="searchTerms" id="searchTerms">
+         <a href="#" onclick="searchRepositories()">Search Repositories</a>
         <div id="results"></div>
       </div>
       <div>
